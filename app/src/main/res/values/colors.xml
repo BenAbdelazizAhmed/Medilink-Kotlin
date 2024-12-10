@@ -14,7 +14,5 @@
     <color name="highlight_blue">#6db0d0</color>
     <color name="black_opacity_02">#03000000</color>
     <color name="black_opacity_40">#66000000</color>
-    <item android:color="#0B8FAC" android:state_checked="true" />
-    <item android:color="#9E9E9E" android:state_checked="false" />
 
 </resources>

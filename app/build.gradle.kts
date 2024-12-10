@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.porjetmobile2025"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.porjetmobile2025"
@@ -37,6 +37,7 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildToolsVersion = "30.0.3"
 }
 
 dependencies {
