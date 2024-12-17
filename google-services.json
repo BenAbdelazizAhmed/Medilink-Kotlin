@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "169712989234",
+    "project_id": "aaado-faab0",
+    "storage_bucket": "aaado-faab0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169712989234:android:120fdb7b8eb8387014f82b",
+        "android_client_info": {
+          "package_name": "com.example.porjetmobile2025"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDidZrIVqAu0ZxHlqc7oOjfTGehSrao8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

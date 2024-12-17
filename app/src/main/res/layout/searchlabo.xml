@@ -30,13 +30,14 @@
             android:orientation="vertical"
             android:paddingHorizontal="15dp">
 
-
+            <!-- Doctor's Information Card -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/card_background"
                 android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:paddingTop="15dp"
+                android:layout_marginBottom="15dp">
 
                 <ImageView
                     android:layout_width="79dp"
@@ -80,13 +81,14 @@
                 </LinearLayout>
             </LinearLayout>
 
+            <!-- Patients, Experiences, Reviews section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingTop="15dp">
+                android:paddingTop="15dp"
+                android:layout_marginBottom="15dp">
 
-                <!-- Patients -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -95,8 +97,7 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:background="@drawable/card_background"
-                    android:layout_marginEnd="10dp"
-                    android:cornerRadius="10dp">
+                    android:layout_marginEnd="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -113,7 +114,6 @@
                         android:textColor="#0099E5" />
                 </LinearLayout>
 
-                <!-- Experiences -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -122,8 +122,7 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:background="@drawable/card_background"
-                    android:layout_marginEnd="10dp"
-                    android:cornerRadius="10dp">
+                    android:layout_marginEnd="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -140,7 +139,6 @@
                         android:textColor="#0099E5" />
                 </LinearLayout>
 
-                <!-- Reviews -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -149,8 +147,7 @@
                     android:gravity="center"
                     android:padding="10dp"
                     android:background="@drawable/card_background"
-                    android:layout_marginEnd="10dp"
-                    android:cornerRadius="10dp">
+                    android:layout_marginEnd="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -185,7 +182,7 @@
                 android:textSize="15sp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Time Selection -->
+            <!-- Schedule Section -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -194,6 +191,7 @@
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
+            <!-- Time Selection Buttons -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -201,30 +199,25 @@
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp">
 
-                <!-- Time Slots -->
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lundi"
-                    android:background=""
                     android:textColor="#0099E5" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mardi"
-                    android:background=""
                     android:textColor="#0099E5" />
 
                 <Button
                     android:layout_width="179dp"
                     android:layout_height="wrap_content"
-                    android:background=""
                     android:text="Mercredi"
                     android:textColor="#0099E5" />
-
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -236,56 +229,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Jeudi"
-                    android:background=""
                     android:textColor="@color/colorPrimary" />
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Vendredi"
-                    android:background=""
                     android:textColor="@color/colorPrimary" />
 
                 <Button
                     android:layout_width="162dp"
                     android:layout_height="wrap_content"
-                    android:background=""
                     android:text="Samedi"
                     android:textColor="@color/colorPrimary" />
-
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="08:00 PM"
-                    android:background=""
-                    android:textColor="@color/colorPrimary" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="10:00 PM"
-                    android:background=""
-                    android:textColor="@color/colorPrimary" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="12:00 PM"
-                    android:background=""
-                    android:textColor="@color/colorPrimary" />
-
-
             </LinearLayout>
 
+            <!-- Complaint Section -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -299,8 +258,7 @@
                 android:layout_height="85dp"
                 android:hint="Votre texte ici"
                 android:padding="16dp"
-                android:background="@drawable/card_background"
-        >
+                android:background="@drawable/card_background" />
 
             <Button
                 android:id="@+id/book_appointment_button"
@@ -316,4 +274,3 @@
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
-

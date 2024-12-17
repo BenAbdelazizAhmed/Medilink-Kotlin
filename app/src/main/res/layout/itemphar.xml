@@ -64,7 +64,6 @@
                 android:hint="Taille (cm)"
                 android:inputType="number"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/edittext_background"
                 android:padding="10dp" />
 
             <!-- Champ Poids -->
@@ -75,7 +74,6 @@
                 android:hint="Poids (kg)"
                 android:inputType="numberDecimal"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/edittext_background"
                 android:padding="10dp" />
 
             <Button

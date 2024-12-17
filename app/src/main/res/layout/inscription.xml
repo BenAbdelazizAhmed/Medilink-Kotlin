@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp"
-            android:background="@drawable/rounded_top_bg">
+           >
 
             <!-- Texte de bienvenue -->
             <TextView
@@ -47,35 +47,31 @@
                     android:textColor="#A1A8B0" />
             </LinearLayout>
 
-            <!-- Champ Nom -->
             <EditText
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nom complet"
                 android:inputType="textPersonName"
-                android:drawableStart="@drawable/ic_person"
-                android:padding="10dp"
-                android:background="@drawable/input_bg" />
+                android:padding="10dp" />
 
-            <!-- Champ Email -->
+
             <EditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:drawableStart="@drawable/ic_email"
-                android:padding="10dp"
-                android:background="@drawable/input_bg" />
+                android:padding="10dp" />
 
-            <!-- Champ Mot de passe -->
             <EditText
+                android:id="@+id/passwordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mot de passe"
                 android:inputType="textPassword"
-                android:drawableStart="@drawable/ic_lock"
-                android:padding="10dp"
-                android:background="@drawable/input_bg" />
+                android:padding="10dp" />
+
 
             <!-- Champ Confirmation du mot de passe -->
             <EditText
@@ -83,9 +79,9 @@
                 android:layout_height="wrap_content"
                 android:hint="Confirmer le mot de passe"
                 android:inputType="textPassword"
-                android:drawableStart="@drawable/ic_lock"
+
                 android:padding="10dp"
-                android:background="@drawable/input_bg" />
+                />
 
             <!-- Champ Téléphone -->
             <LinearLayout
@@ -98,20 +94,19 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/téléchargement"
+                    android:src="@drawable/imagess"
                     android:layout_marginEnd="10dp"/>
 
-                <!-- Champ Téléphone -->
                 <EditText
+                    android:id="@+id/phoneEditText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="+216"
                     android:inputType="phone"
-                    android:drawableStart="@drawable/ic_phone"
                     android:padding="10dp"
-                    android:background="@drawable/input_bg"
                     android:maxLength="13" />
+
             </LinearLayout>
 
             <!-- Choisir Patient ou Médecin -->
@@ -139,8 +134,8 @@
                     android:textColor="#A1A8B0"/>
             </LinearLayout>
 
-            <!-- Bouton Inscription -->
             <Button
+                android:id="@+id/signUpButton"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:text="S'inscrire"
@@ -148,6 +143,7 @@
                 android:textColor="#FFFFFF"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="15dp" />
+
 
             <!-- Ligne de séparation -->
             <LinearLayout
@@ -162,12 +158,6 @@
                     android:layout_height="1dp"
                     android:background="#CCCCCC" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Vous Avez Déja un compte ? connexion"
-                    android:layout_marginHorizontal="10dp"
-                    android:textColor="#4491f9" />
 
                 <View
                     android:layout_width="0dp"
@@ -202,6 +192,7 @@
                     android:textColor="#A1A8B0" />
 
                 <TextView
+                    android:id="@+id/signInRedirectTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Se connecter"

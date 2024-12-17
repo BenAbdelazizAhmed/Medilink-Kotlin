@@ -19,8 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
-            android:background="">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -53,10 +52,9 @@
                 android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:padding="10dp"
-            android:background="" />
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp" />
 
             <!-- Password EditText -->
             <EditText
@@ -65,8 +63,7 @@
                 android:layout_height="48dp"
                 android:hint="Mot de passe"
                 android:inputType="textPassword"
-                android:padding="10dp"
-                android:background="" />
+                android:padding="10dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -78,7 +75,7 @@
 
             <!-- Login Button -->
             <Button
-                android:id="@+id/signInButton"
+                android:id="@+id/signeInButton"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:text="Se Connecter"
@@ -129,6 +126,7 @@
                     android:layout_margin="10dp" />
 
                 <ImageView
+                    android:id="@+id/googleSignInImageView"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/google"
@@ -156,6 +154,7 @@
                     android:textColor="#A1A8B0" />
 
                 <TextView
+                    android:id="@+id/signUpTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S'inscrire"

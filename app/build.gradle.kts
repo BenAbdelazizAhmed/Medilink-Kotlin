@@ -1,18 +1,21 @@
+
 plugins {
+    id("com.google.gms.google-services")
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-
-// Plugin pour Firebase
 }
 
 android {
     namespace = "com.example.porjetmobile2025"
     compileSdk = 35
+    buildFeatures{
+        viewBinding=true
+    }
 
     defaultConfig {
         applicationId = "com.example.porjetmobile2025"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -37,26 +40,21 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-    buildToolsVersion = "30.0.3"
 }
 
 dependencies {
-    // Utilisation du BoM Firebase pour gérer les versions
     implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
 
-    // Firebase SDKs
-    implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-firestore")
 
-    // Dépendances Android
+
+    // Dépendances AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.play.services.measurement.api)
-    implementation(libs.firebase.firestore.ktx)
 
     // Dépendances de test
     testImplementation(libs.junit)
