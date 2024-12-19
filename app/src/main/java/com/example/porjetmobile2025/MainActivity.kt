@@ -1,5 +1,6 @@
-package com.example.porjetmobile2025
+package com.example.porjetmobile2025;
 
+import com.example.porjetmobile2025.R
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button

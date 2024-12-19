@@ -51,6 +51,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/doctorNameEditText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Dr.Ahmed ABdelaziz"
@@ -100,6 +101,7 @@
                     android:layout_marginEnd="10dp">
 
                     <TextView
+                        android:id="@+id/patientt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Patients"
@@ -200,6 +202,7 @@
                 android:paddingBottom="10dp">
 
                 <Button
+                    android:id="@+id/dt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Lundi"
@@ -209,6 +212,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mardi"
+
                     android:textColor="#0099E5" />
 
                 <Button
@@ -254,7 +258,8 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:layout_width="match_parent"
+                android:id="@+id/complaintEditText"
+            android:layout_width="match_parent"
                 android:layout_height="85dp"
                 android:hint="Votre texte ici"
                 android:padding="16dp"

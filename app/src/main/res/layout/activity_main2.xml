@@ -19,17 +19,19 @@
         app:title="Calculator"
         app:titleTextColor="#0B8FAC" />
 
+
     <ImageView
         android:id="@+id/top_image"
         android:layout_width="0dp"
         android:layout_height="300dp"
+        android:contentDescription="Image de Santé"
         android:padding="16dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/imagess"
-    android:contentDescription="Image de Santé"
-    android:scaleType="centerCrop"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-35dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/input_section"

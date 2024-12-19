@@ -7,7 +7,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:elevation="4dp"
@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="My Doctors"
-        app:titleTextColor="#0B8FAC" />
+        app:titleTextColor="#0B8FAC"
+        />
 
     <!-- Search Bar -->
     <androidx.cardview.widget.CardView
